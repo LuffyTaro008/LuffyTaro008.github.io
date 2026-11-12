@@ -1,104 +1,498 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Modern</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Muhammad Rizal Faiz | Android Kernel Developer</title>
+
+  <meta name="description" content="Personal portfolio of Muhammad Rizal Faiz, Android Kernel Developer and Maintainer.">
+  <meta name="theme-color" content="#0b0f14">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
-    <h2>MyProfileCard</h2>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+  <!-- NAVIGATION -->
+  <header class="header">
+    <nav class="navbar container">
+
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>RIZAL<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-cta">Let's Connect <span>↗</span></a>
+
     </nav>
+  </header>
 
-    <button id="toggleTheme">🌙</button>
-</header>
+  <main>
 
-<!-- HERO -->
-<section class="hero reveal">
-    <div class="hero-text">
-        <h1>Hi, I'm <span>LuffyTaro008 (Muhammad Rizal Faiz)</span></h1>
-        <p>Kernel Maintainer For Device Poco X3 Pro And Xiaomi Redmi 5</p>
+    <!-- HERO -->
+    <section class="hero container" id="home">
 
-        <div class="hero-actions">
-            <button>Download CV</button>
-            <button class="outline">Contact Me</button>
-        </div>
-    </div>
+      <div class="hero-content reveal">
 
-    <img src="profile.jpg" alt="profile" class="hero-img">
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section reveal">
-    <h2>About Me</h2>
-    <p>
-        Saya seorang Maintainer yang fokus membangun Kernel Android,
-        Yang Fokus Pada Performa Dan Stabilitas Pada Custom ROm AOSP.
-    </p>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section reveal">
-    <h2>Skills</h2>
-
-    <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>C</span>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section reveal">
-    <h2>Projects</h2>
-
-    <div class="projects">
-
-        <div class="card">
-            <h3>kernel development</h3>
-            <p>Building Custom Kernel For Another Devices.</p>
+        <div class="availability">
+          <span class="status-dot"></span>
+          ANDROID KERNEL DEVELOPER
         </div>
 
-        <div class="card">
-            <h3>Thousand SunnyGo Kernel Poco X3 Pro</h3>
-            <p>Custom Kernel For Device Poco X3 Pro (Vayu / Bhima) With Support AOSP Only.</p>
+        <p class="hero-greeting">Hello, I'm</p>
+
+        <h1>
+          Muhammad Rizal<br>
+          <span>Faiz.</span>
+        </h1>
+
+        <h2 class="hero-role">
+          Building better Android experiences<span class="blue-dot">.</span>
+        </h2>
+
+        <p class="hero-description">
+          Android Kernel Developer & Maintainer focused on
+          performance, stability, optimization, and creating
+          reliable Android experiences.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            Explore My Work <span>↗</span>
+          </a>
+
+          <a href="#about" class="btn btn-secondary">
+            More About Me
+          </a>
         </div>
 
-        <div class="card">
-            <h3>Thousand SunnyGo Kernel Redmi 5</h3>
-            <p>Custom Kernel For Device Xiaomi Redmi 5 (Rosy) With Support AOSP Only.</p>
+        <div class="hero-socials">
+          <a href="https://github.com/LuffyTaro008"
+             target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <span class="social-divider"></span>
+          <a href="#contact">Get in Touch ↗</a>
         </div>
 
+      </div>
+
+      <div class="hero-visual reveal">
+
+        <div class="profile-card">
+
+          <div class="card-top">
+            <span class="card-indicator"></span>
+            <span>DEVELOPER PROFILE</span>
+            <span class="card-menu">•••</span>
+          </div>
+
+          <div class="profile-image-wrapper">
+            <img src="profile.jpg"
+                 alt="Muhammad Rizal Faiz"
+                 class="profile-image">
+          </div>
+
+          <h3>Muhammad Rizal Faiz</h3>
+          <p class="profile-subtitle">Android Kernel Developer</p>
+
+          <div class="profile-divider"></div>
+
+          <div class="profile-info">
+            <div>
+              <span>FOCUS</span>
+              <strong>Kernel Development</strong>
+            </div>
+            <div>
+              <span>PLATFORM</span>
+              <strong>Android / Linux</strong>
+            </div>
+            <div>
+              <span>INTEREST</span>
+              <strong>Performance & Stability</strong>
+            </div>
+          </div>
+
+          <div class="profile-footer">
+            <span>OPEN SOURCE ENTHUSIAST</span>
+            <span class="footer-symbol">✳</span>
+          </div>
+
+        </div>
+
+        <div class="floating-tag tag-one">
+          <span>⌘</span> Linux Kernel
+        </div>
+
+        <div class="floating-tag tag-two">
+          <span class="status-dot"></span> Open Source
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section container reveal">
+      <div class="stat-item">
+        <span class="stat-number">01</span>
+        <span class="stat-label">CORE EXPERTISE</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">Android</span>
+        <span class="stat-label">ECOSYSTEM</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">Open</span>
+        <span class="stat-label">SOURCE MINDSET</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">∞</span>
+        <span class="stat-label">LEARNING JOURNEY</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+
+      <div class="section-heading reveal">
+        <span class="section-label">01 / ABOUT ME</span>
+        <h2>Engineering with <span>purpose.</span></h2>
+        <p>
+          Passionate about technology, performance, and
+          building things that make a difference.
+        </p>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-main reveal">
+          <div class="about-icon">⌘</div>
+
+          <h3>Beyond just writing code.</h3>
+
+          <p>
+            I'm an Android Kernel Developer and Maintainer
+            interested in understanding how systems work
+            at a deeper level.
+          </p>
+
+          <p>
+            My focus is on Linux kernel development,
+            Android optimization, system stability, and
+            delivering a better experience through
+            thoughtful engineering.
+          </p>
+
+          <p>
+            I believe in open-source collaboration,
+            continuous learning, and sharing knowledge
+            with the developer community.
+          </p>
+        </div>
+
+        <div class="about-side reveal">
+
+          <div class="info-card">
+            <span class="info-number">01</span>
+            <h4>Kernel Development</h4>
+            <p>Exploring and maintaining Android kernel projects.</p>
+          </div>
+
+          <div class="info-card">
+            <span class="info-number">02</span>
+            <h4>System Optimization</h4>
+            <p>Improving performance, efficiency, and stability.</p>
+          </div>
+
+          <div class="info-card">
+            <span class="info-number">03</span>
+            <h4>Open Source</h4>
+            <p>Contributing to collaborative development.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section container" id="skills">
+
+      <div class="section-heading reveal">
+        <span class="section-label">02 / EXPERTISE</span>
+        <h2>Technical <span>toolkit.</span></h2>
+        <p>Technologies and areas I work with and continue to explore.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">&lt;/&gt;</div>
+          <h3>Programming</h3>
+          <p>Core languages and development tools.</p>
+          <div class="skill-tags">
+            <span>C</span>
+            <span>Shell</span>
+            <span>Python</span>
+            <span>Git</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">⌘</div>
+          <h3>Kernel & System</h3>
+          <p>Low-level system development and maintenance.</p>
+          <div class="skill-tags">
+            <span>Linux Kernel</span>
+            <span>Kernel Building</span>
+            <span>Debugging</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">◈</div>
+          <h3>Android Development</h3>
+          <p>Android platform and custom development.</p>
+          <div class="skill-tags">
+            <span>Android</span>
+            <span>AOSP</span>
+            <span>Device Trees</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">↗</div>
+          <h3>Development Workflow</h3>
+          <p>Tools and workflows for collaborative projects.</p>
+          <div class="skill-tags">
+            <span>GitHub</span>
+            <span>Linux</span>
+            <span>Open Source</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section container" id="projects">
+
+      <div class="section-heading reveal">
+        <span class="section-label">03 / SELECTED WORK</span>
+        <h2>Featured <span>projects.</span></h2>
+        <p>A selection of my work in the Android development ecosystem.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card featured-project reveal">
+
+          <div class="project-top">
+            <span class="project-category">KERNEL DEVELOPMENT</span>
+            <span class="project-symbol">↗</span>
+          </div>
+
+          <div class="project-art kernel-art">
+            <div class="terminal-window">
+              <div class="terminal-header">
+                <span></span><span></span><span></span>
+                <small>kernel@development</small>
+              </div>
+              <div class="terminal-body">
+                <p><span class="terminal-blue">$</span> make kernel</p>
+                <p>Building Android kernel...</p>
+                <p><span class="terminal-green">✓</span> Compilation complete</p>
+                <p><span class="terminal-blue">$</span> _</p>
+              </div>
+            </div>
+          </div>
+
+          <h3>Thousand SunnyGo Kernel</h3>
+
+          <p>
+            Android kernel project focused on system performance,
+            stability, and device optimization.
+          </p>
+
+          <div class="project-tags">
+            <span>Android</span>
+            <span>Linux Kernel</span>
+            <span>Performance</span>
+          </div>
+
+          <a href="https://github.com/LuffyTaro008"
+             target="_blank" rel="noopener noreferrer"
+             class="project-link">
+            Explore Project <span>↗</span>
+          </a>
+
+        </article>
+
+        <article class="project-card reveal">
+
+          <div class="project-top">
+            <span class="project-category">DEVICE DEVELOPMENT</span>
+            <span class="project-symbol">↗</span>
+          </div>
+
+          <div class="project-art device-art">
+            <div class="device-visual">
+              <div class="device-screen">
+                <span>ANDROID</span>
+                <strong>VAYU</strong>
+                <small>PERFORMANCE / STABILITY</small>
+              </div>
+            </div>
+          </div>
+
+          <h3>POCO X3 Pro</h3>
+
+          <p>
+            Android kernel and device development for
+            POCO X3 Pro (Vayu/Bhima).
+          </p>
+
+          <div class="project-tags">
+            <span>Vayu</span>
+            <span>Bhima</span>
+            <span>Android</span>
+          </div>
+
+          <a href="https://github.com/LuffyTaro008"
+             target="_blank" rel="noopener noreferrer"
+             class="project-link">
+            View Repository <span>↗</span>
+          </a>
+
+        </article>
+
+        <article class="project-card reveal">
+
+          <div class="project-top">
+            <span class="project-category">DEVICE DEVELOPMENT</span>
+            <span class="project-symbol">↗</span>
+          </div>
+
+          <div class="project-art device-art rosy-art">
+            <div class="device-visual">
+              <div class="device-screen">
+                <span>ANDROID</span>
+                <strong>ROSY</strong>
+                <small>DEVICE DEVELOPMENT</small>
+              </div>
+            </div>
+          </div>
+
+          <h3>Xiaomi Redmi 5</h3>
+
+          <p>
+            Device development and kernel-related work
+            for Xiaomi Redmi 5 (Rosy).
+          </p>
+
+          <div class="project-tags">
+            <span>Rosy</span>
+            <span>Linux</span>
+            <span>Android</span>
+          </div>
+
+          <a href="https://github.com/LuffyTaro008"
+             target="_blank" rel="noopener noreferrer"
+             class="project-link">
+            View Repository <span>↗</span>
+          </a>
+
+        </article>
+
+      </div>
+
+      <div class="github-banner reveal">
+        <div>
+          <span class="section-label">MORE ON GITHUB</span>
+          <h3>Code, contributions & experiments.</h3>
+          <p>Explore more of my work and open-source activities.</p>
+        </div>
+
+        <a href="https://github.com/LuffyTaro008"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-primary">
+          Visit GitHub ↗
+        </a>
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section container" id="contact">
+
+      <div class="contact-card reveal">
+
+        <span class="section-label">04 / GET IN TOUCH</span>
+
+        <h2>Let's build something<br><span>meaningful.</span></h2>
+
+        <p>
+          Interested in collaboration, Android development,
+          kernel projects, or open-source contributions?
+          Feel free to reach out.
+        </p>
+
+        <a href="https://github.com/LuffyTaro008"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-primary">
+          Connect on GitHub ↗
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>RIZAL<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <p>Designed & Built with passion.</p>
+
+      <p class="copyright">
+        © <span id="year"></span> Muhammad Rizal Faiz. All rights reserved.
+      </p>
+
     </div>
-</section>
+  </footer>
 
-<!-- CONTACT -->
-<section id="contact" class="section reveal">
-    <h2>Contact</h2>
-
-    <div class="contact-box">
-        <p>Email: rizal83727@gmail.com</p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Muhammad Rizal Faiz. All rights reserved.</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
